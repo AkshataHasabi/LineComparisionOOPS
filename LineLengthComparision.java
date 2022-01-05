@@ -28,11 +28,21 @@ public class LineLengthComparision {
 		int length2= (int) Math.sqrt(Math.pow(x4-x3,  2) + Math.pow(y4-y3, 2));
 		Integer lineLength1 = new Integer(length1);	
 		Integer lineLength2 = new Integer(length2);
+		int result =lineLength1.compareTo(lineLength2);
 		if(lineLength1.equals(lineLength2)) {
 			System.out.println("Lines are equall");
 		}
 		else {
 			System.out.println("Lines are not equall");
+		}
+		if(result > 0) {
+			System.out.println("Line1 is greater than line2");
+		}
+		else if(result < 0) {
+			System.out.println("Line1 is less than line2");
+		}
+		else {
+			System.out.println("Line1 is equall to line2");
 		}
 	}
 }
